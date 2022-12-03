@@ -101,8 +101,9 @@ else
   echo
   cat <<EOF >snell-server.conf
 [snell-server]
-listen = ${port}
+listen = 0.0.0.0:${port}
 psk = DsU0x9afoOKLoWI1kUYnlxj6tv3YDef
+ipv6 = false
 obfs = http
 EOF
 fi
